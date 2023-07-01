@@ -14,6 +14,16 @@ function ShowResetButton() {
     document.getElementById("resetButton").style.display = "block";
 }
 
+function handleKeyDown(event) {
+    if (event.code === "Space") {
+        jump();
+    }
+}
+
+var score = 0;
+var scoreElement = document.getElementById("score");
+var scoreIncremented = false;
+
 var checkDead = setInterval(function () {
     var characterTop = parseInt(window.getComputedStyle(character).getPropertyValue("top"));
     var blockLeft = parseInt(window.getComputedStyle(block).getPropertyValue("left"));
@@ -23,6 +33,12 @@ var checkDead = setInterval(function () {
         block.style.display = "none";
         alert("You lose!");
         ShowResetButton();
+    } else if (blockLeft <= 0 && !scoreIncremented) {
+        score++;
+        scoreElement.textContent = "Score: " + score;
+        scoreIncremented = true;
+    } else if (blockLeft > 0) {
+        scoreIncremented = false;
     }
 }, 10);
 
