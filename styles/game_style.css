@@ -1,14 +1,28 @@
-* {
+html, body {
+    height: 100%;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+}
+  
+body {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
 }
 
 #game {
-    width : 500px;
-    height : 200px;
+    width: 500px;
+    height: 200px;
     border: 1px solid #000;
-    margin: 0 auto;
+    margin-top: -200px;
 }
 
 #character {
@@ -56,4 +70,10 @@
     100% {
         left : 0;
     }
+}
+
+#resetButton {
+    position: relative;
+    margin-top: 20px;
+    display: none;
 }
