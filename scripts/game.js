@@ -10,6 +10,10 @@ function jump() {
     }, 500);
 }
 
+function ShowResetButton() {
+    document.getElementById("resetButton").style.display = "block";
+}
+
 var checkDead = setInterval(function () {
     var characterTop = parseInt(window.getComputedStyle(character).getPropertyValue("top"));
     var blockLeft = parseInt(window.getComputedStyle(block).getPropertyValue("left"));
@@ -18,5 +22,13 @@ var checkDead = setInterval(function () {
         block.style.animation = "none";
         block.style.display = "none";
         alert("You lose!");
+        ShowResetButton();
     }
 }, 10);
+
+var resetButton = document.getElementById("resetButton");
+resetButton.addEventListener("click", function () {
+    block.style.animation = "block 1s infinite linear";
+    block.style.display = "block";
+    resetButton.style.display = "none";
+});
