@@ -26,4 +26,14 @@
     position: relative;
     top : 125px;
     left : 475px;
+    animation : block 1s infinite linear;
+}
+
+@keyframes block {
+    0% {
+        left : 475px;
+    }
+    100% {
+        left : 0;
+    }
 }
