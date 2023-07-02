@@ -20,7 +20,7 @@ header {
 nav ul {
   list-style: none;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 nav ul li a {
