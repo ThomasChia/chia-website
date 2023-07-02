@@ -51,20 +51,22 @@ function removeBlock(block) {
 function checkDead() {
     checkDeadInterval = setInterval(function () {
         var characterTop = parseInt(window.getComputedStyle(character).getPropertyValue("top"));
+        var characterRight = parseInt(window.getComputedStyle(character).getPropertyValue("right"));
         var blockLeft = parseInt(window.getComputedStyle(block).getPropertyValue("left"));
         var blockWidth = parseInt(window.getComputedStyle(block).getPropertyValue("width"));
+        console.log(characterTop, characterRight, blockLeft, blockWidth)
 
-        if (blockLeft < blockWidth && characterTop >= 130) {
+        if (blockLeft < characterRight && characterTop >= 125) {
             clearInterval(checkDeadInterval);
             block.style.animation = "none";
             block.style.display = "none";
             alert("You lose!");
             ShowResetButton();
-        } else if (blockLeft <= 20 && !scoreIncrement) {
+        } else if (blockLeft <= 30 && !scoreIncrement) {
             scoreIncrement = true;
             score++;
             scoreElement.textContent = "Score: " + score;
-        } else if (blockLeft > 20) {
+        } else if (blockLeft > 30) {
             scoreIncrement = false;
         }
     }, 10);

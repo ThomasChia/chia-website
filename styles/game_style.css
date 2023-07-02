@@ -6,6 +6,7 @@ html, body {
   
 body {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     background-color: #000;
@@ -15,6 +16,7 @@ body {
 }
 
 .container {
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -28,29 +30,34 @@ body {
     left: 50%;
     transform: translateX(-50%);
     text-align: center;
+    color: #fff;
+    text-decoration: none;
+    font-size: 36px;
 }
 
 #score {
     position: absolute;
-    font-size: 24px;
-    color: #000;
-    margin-top: -500px;
+    font-size: 36px;
+    color: #fff;
+    margin-top: -400px;
 }
 
 #game {
     width: 700px;
     height: 200px;
     border: 1px solid #000;
-    margin-top: -200px;
+    margin-top: -100px;
 }
 
 #character {
-    width : 50px;
-    height : 50px;
-    background-color : #ff0000;
+    width : 75px;
+    height : 75px;
+    background-color : #fff;
+    border-radius: 50%;
     position: relative;
     top : 150px;
     left : 0;
+    right : 75px;
 }
 
 .animate {
@@ -92,7 +99,20 @@ body {
 }
 
 #resetButton {
-    position: relative;
-    margin-top: 20px;
     display: none;
+    position: relative;
+    background-color: #fff;
+    border: none;
+    border-radius: 10px;
+    color: #000;
+    cursor: pointer;
+    font-size: 24px;
+    padding: 10px 20px;
+    margin-top: 50px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+#resetButton:hover {
+    background-color: #000;
+    color: #fff;
 }
