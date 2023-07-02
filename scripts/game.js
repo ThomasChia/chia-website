@@ -61,10 +61,10 @@ function checkDead() {
             alert("You lose!");
             ShowResetButton();
         } else if (blockLeft <= 20 && !scoreIncrement) {
+            scoreIncrement = true;
             score++;
             scoreElement.textContent = "Score: " + score;
-            scoreIncrement = true;
-        } else if (blockLeft > 0) {
+        } else if (blockLeft > 20) {
             scoreIncrement = false;
         }
     }, 10);

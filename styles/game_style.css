@@ -27,8 +27,10 @@ body {
 }
 
 #score {
+    position: absolute;
     font-size: 24px;
     color: #000;
+    margin-top: -500px;
 }
 
 #game {
