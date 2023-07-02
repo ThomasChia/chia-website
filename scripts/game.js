@@ -8,9 +8,6 @@ function jump() {
     setTimeout(function () {
         character.classList.remove("animate");
     }, 500);
-    const particle = document.createElement('div');
-    showParticles(particle);
-    gameContainer.appendChild(particle);
 }
 
 function ShowResetButton() {
@@ -26,12 +23,6 @@ function handleKeyDown(event) {
 function getRandomLeft() {
     var maxWidth = window.innerWidth - block.offsetWidth;
     return Math.floor(Math.random() * maxWidth);
-}
-
-function showParticles(particle) {
-    particle.classList.add('particle');
-    particle.style.top = powerUp.offsetTop + 'px';
-    particle.style.left = powerUp.offsetLeft + 'px';
 }
 
 var blocks = [];
