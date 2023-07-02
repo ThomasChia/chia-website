@@ -35,18 +35,18 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-  text-decoration: underline;
-}
+    text-decoration: underline;
+    background-color: #fff;
+    color: #000;
+  }
 
-/* Main content */
 main {
   max-width: 1200px;
   margin: 0 auto;
   padding: 40px;
-  position: relative; /* Add this line */
+  position: relative;
 }
 
-/* Add this block */
 main::before {
   content: "";
   position: absolute;
