@@ -11,7 +11,7 @@ function jump() {
 }
 
 function ShowResetButton() {
-    document.getElementById("resetButton").style.display = "block";
+    document.getElementById("resetButton").style.visibility = "visible";
 }
 
 function handleKeyDown(event) {
@@ -76,7 +76,7 @@ var resetButton = document.getElementById("resetButton");
 resetButton.addEventListener("click", function () {
     block.style.animation = "block 1s infinite linear";
     block.style.display = "block";
-    resetButton.style.display = "none";
+    resetButton.style.visibility = "hidden";
     score = 0;
     scoreElement.textContent = "Score: " + score;
     scoreIncrement = false;
