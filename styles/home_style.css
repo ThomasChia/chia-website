@@ -46,22 +46,7 @@ main {
   position: relative;
 }
 
-main::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-image: url('floating-background.jpg');
-  background-size: cover;
-  background-position: center;
-  z-index: -1;
-  opacity: 0.5;
-}
-
 #hero {
-  background-image: url('hero.jpg');
   background-size: cover;
   background-position: center;
   height: 500px;
@@ -156,20 +141,38 @@ footer {
   width: 100px;
   height: 100px;
   border-radius: 50%;
-  box-shadow: inset 0 0 25px rgba(255, 255, 255);
-  animation: 8s ease-in-out infinite;
+  box-shadow: inset 0 0 25px rgb(188, 185, 185);
+  animation-name: bubbleBounce;
+  animation-duration: 8s;
+  animation-iteration-count: infinite;
 }
 
-@keyframes animate
+.bubble.small {
+  position: fixed;
+  right: 150px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  box-shadow: inset 0 0 25px rgb(188, 185, 185);
+  animation-name: bubbleBounce;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes bubbleBounce
 {
   0% {
-    transform: translateY(-20px);
+    transform: translateY(-100px);
+  }
+  50% {
+    transform: translateY(100px);
   }
   100% {
-    transform: translateY(-20px);
+    transform: translateY(-100px);
   }
 }
-
 
 .bubble::before {
   content: '';
