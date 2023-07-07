@@ -77,8 +77,7 @@ section:hover {
 }
 
 #bottom-gif {
-  /* display:inline-flex; */
-  justify-content: left;
+  display: flex;
 }
 
 h2 {
