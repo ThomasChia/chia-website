@@ -44,7 +44,7 @@ h1 {
   font-size: 48px;
   font-weight: bold;
   text-align: center;
-  margin-top: 50px;
+  /* margin-top: 50px; */
 }
 
 main {
@@ -57,10 +57,20 @@ main {
 section {
   background-color: #fff;
   padding: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   transition: box-shadow 0.2s ease-in-out;
+  text-align: center;
+}
+
+div.my-head {
+  background-color: none;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: none;
+  box-shadow: none;
+  transition: none;
   text-align: center;
 }
 
@@ -74,6 +84,7 @@ section:hover {
 
 #top-gif {
   justify-content: center;
+  padding: 20px;
 }
 
 #bottom-gif {

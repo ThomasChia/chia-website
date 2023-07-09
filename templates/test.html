@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tree Structure Chart</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jstree/3.3.11/themes/default/style.min.css" />
+</head>
+<body>
+    <div id="tree"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jstree/3.3.11/jstree.min.js"></script>
+    <script>
+        $(function () {
+            $('#tree').jstree({
+                'core' : {
+                    'data' : [
+                        {
+                            "text" : "Python",
+                            "state" : {
+                                "opened" : true
+                            },
+                            "children" : [
+                                {
+                                    "text" : "PyTorch"
+                                },
+                                {
+                                    "text" : "Pandas"
+                                },
+                                {
+                                    "text" : "Flask"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            });
+        });
+    </script>
+</body>
+</html>
