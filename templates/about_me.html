@@ -72,30 +72,14 @@
 	  <p>Long story short, in my day job I'm a Consultant, and I also code stupid things like website, apps, and machine learning models that predict worse than random guess.</p>
     </section>
     <section>
-      <h2>My Skills</h2>
-	  <div id="myplot">Hi</div>
-	  <script src="https://cdn.jsdelivr.net/npm/@observablehq/plot@0.6/+esm"></script>
-	  <script type="module" src="../scripts/tree_diagram.js"></script>
-      <!-- <ul>
-        <li>Python</li>
-		<ul>
-			<li>PyTorch</li>
-			<li>Pandas</li>
-			<li>Flask</li>
-		</ul>
-        <li>SQL</li>
-		<ul>
-			<li>Postgres</li>
-			<li>MongoDB</li>
-		</ul>
-        <li>Frontend</li>
-		<ul>
-			<li>JavaScript</li>
-			<li>HTML</li>
-			<li>CSS</li>
-		</ul>
-		<li>AWS</li>
-      </ul> -->
+      <h2>Skills</h2>
+	  <div class="skillPlots">
+		<div class="treePlot" id="pythonPlot"></div>
+		<div class="treePlot" id="databasePlot"></div>
+		<div class="treePlot" id="frontendPlot"></div>
+		<script src="https://cdn.jsdelivr.net/npm/@observablehq/plot@0.6/+esm"></script>
+		<script type="module" src="../scripts/tree_diagram.js"></script>
+	  </div>
     </section>
   </main>
   <footer>

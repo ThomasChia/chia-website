@@ -9,7 +9,7 @@ const pythonSkills = [
 const databaseSkills = [
     "SQL/MySQL",
     "SQL/PostgreSQL",
-    "SQL/MongoDB",
+    // "SQL/MongoDB",
 ]
 
 const frontendSkills = [
@@ -21,27 +21,52 @@ const frontendSkills = [
 const pythonPlot =Plot.plot({
     axis: null,
     height: 100,
+    width: 350,
     margin: 10,
-    marginLeft: 40,
-    marginRight: 120,
+    marginLeft: 70,
+    marginRight: 60,
     marks: [
         Plot.tree(pythonSkills, {textStroke: "white"})
-    ]
+    ],
+    color: {
+        scheme: "accent" // use the "accent" scheme
+      },
+    style: {fontFamily: "Arial", fontSize: "14px"},
     })
 
 const databasePlot =Plot.plot({
     axis: null,
     height: 100,
+    width: 350,
     margin: 10,
-    marginLeft: 40,
-    marginRight: 120,
+    marginLeft: 90,
+    marginRight: 90,
     marks: [
         Plot.tree(databaseSkills, {textStroke: "white"})
-    ]
+    ],
+    style: {fontFamily: "Arial", fontSize: "14px"},
+    })
+
+const frontendPlot =Plot.plot({
+    axis: null,
+    height: 100,
+    width: 350,
+    margin: 10,
+    marginLeft: 90,
+    marginRight: 90,
+    marks: [
+        Plot.tree(frontendSkills, {textStroke: "white"})
+    ],
+    color: {
+        scheme: "oranges"
+      },
+    style: {fontFamily: "Arial", fontSize: "14px"},
     })
 
 // const plot = Plot.rectY({length: 10000}, Plot.binX({y: "count"}, {x: Math.random})).plot();
-const div = document.getElementById("myplot");
-div.append(pythonPlot);
-div.append(databasePlot);
-console.log("Hello from tree_diagram.js")
+const pythonPlotDiv = document.getElementById("pythonPlot");
+const databasePlotDiv = document.getElementById("databasePlot");
+const frontendPlotDiv = document.getElementById("frontendPlot");
+pythonPlotDiv.append(pythonPlot);
+databasePlotDiv.append(databasePlot);
+frontendPlotDiv.append(frontendPlot);
