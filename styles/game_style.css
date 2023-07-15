@@ -145,3 +145,13 @@ body {
     background-color: #000;
     color: #fff;
 }
+
+.instructions {
+    position: relative;
+    text-align: center;
+    top: -100px;
+}
+
+.instructions p {
+    padding: 10px;
+}

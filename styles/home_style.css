@@ -234,63 +234,135 @@ footer {
 /* Media queries */
 
 /* Small screens */
-@media only screen and (max-width: 600px) {
-  /* Header */
+@media only screen and (max-width: 750px) {
   header {
     padding: 10px;
   }
 
-  nav ul {
-    flex-direction: column;
-    align-items: center;
+  nav ul li a {
+    padding: 5px;
+    border-radius: 5px;
   }
 
-  nav ul li {
-    margin-bottom: 10px;
+  nav ul li a:hover {
+      padding: 5px;
+      border-radius: 5px;
+    }
+
+  body {
+    font-size: 10px;
   }
 
-  /* Main content */
   main {
-    padding: 20px;
+    padding: 10px;
   }
 
   #hero {
     height: 300px;
+    margin-top: 100px;
+    margin-bottom: 300px;
   }
 
   #hero h1 {
-    font-size: 36px;
+    font-size: 30px;
   }
 
   #hero p {
-    font-size: 18px;
-  }
-
-  #about h2 {
-    font-size: 24px;
-  }
-
-  #about p {
     font-size: 16px;
   }
 
-  #portfolio h2 {
-    font-size: 24px;
+  #about h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
   }
 
+  #about p {
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+
+  .btn {
+    padding: 5px 10px;
+    border-radius: 5px;
+  }
+
+  #portfolio {
+    margin-top: 100px;
+  }
+  
+  #portfolio h2 {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+  
   #portfolio li {
-    flex-basis: calc(50% - 20px);
+    flex-basis: calc(33.33% - 20px);
+  }
+  
+  #portfolio li img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    border-radius: 10px;
+  }
+  
+  #portfolio li h3 {
+    font-size: 8px;
+  }
+  
+  #quote-reference {
+    font-style: italic;
+    margin-left: 50px;
+    margin-top: 0px;
+  }
+  
+  footer {
+    background-color: #000;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .bubble {
+    right: 25px;
+    width: 50px;
+    height: 50px;
+  }
+  
+  .bubble.small {
+    right: 55px;
+    width: 20px;
+    height: 20px;
+  }
+
+  .bubble.small::before {
+    top: 7.5px;
+    left: 7.5px;
+    width: 5px;
+    height: 5px;
+  }
+  
+  .bubble.small span:nth-child(1) {
+    border-left: 5px solid #0fb4ff;
+    filter: blur(3px);
+  }
+  
+  .bubble.small span:nth-child(2) {
+    border-right: 5px solid #ff448f;
+    filter: blur(6px);
+  }
+  
+  .bubble.small span:nth-child(3) {
+    border-top: 5px solid #ffeb3b;
+    filter: blur(3px);
   }
 }
-
-/* Medium screens */
+/* 
 @media only screen and (min-width: 601px) and (max-width: 900px) {
-  /* Header */
   header {
     padding: 15px;
   }
 
-  /* Main content */
   main {
     padding: 30px;
   }
@@ -324,8 +396,16 @@ footer {
   }
 }
 
-@media only screen and (max-width: 600px) {
-  /* Header */
+@media (max-width: 768px) {
+  body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+    color: #000;
+    font-size: 100px;
+  }
+
   header {
     padding: 10px;
   }
@@ -339,7 +419,6 @@ footer {
     margin-bottom: 10px;
   }
 
-  /* Main content */
   main {
     padding: 20px;
   }
@@ -371,4 +450,4 @@ footer {
   #portfolio li {
     flex-basis: calc(50% - 20px);
   }
-}
+} */
