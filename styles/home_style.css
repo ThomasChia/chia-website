@@ -149,7 +149,7 @@ footer {
 
 .bubble {
   position: fixed;
-  right: 75px;
+  right: 55px;
   top: 50%;
   transform: translateY(-50%);
   width: 100px;
@@ -163,7 +163,7 @@ footer {
 
 .bubble.small {
   position: fixed;
-  right: 150px;
+  right: 130px;
   top: 50%;
   transform: translateY(-50%);
   width: 50px;
