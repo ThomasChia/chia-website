@@ -1,39 +1,72 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-
-<head>
-    <meta charset="utf-8">
-    <title>CHIA | chia.monster</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <title>My Personal Website</title>
     <link rel="icon" href="assets/panda.png">
-    <link rel="stylesheet" href="styles/style.css">
-</head>
-
-<body>
-    <h1><a href="/">CHIA</a></h1>
-    <hr>
-    <h2>HOME</h2>
-    <p>
-        Hello everyone!
-    <p>
-        In between each paragraph, just use those p tags.
-        I like writing one sentence per line here.
-        But it will all just come out as one paragraph.
-    <p>
-        You get used to writing inbetween the tags, and just ignoring them.
-        It's so much easier than using a collection of other tools to make HTML.
-        Just write inside an HTML file directly!
-        So much simpler.
-    <p>
-        You can <a href="templates/about_me.html">link to other pages like this</a>.
-    <p>
-    <p>
-        <a href="templates/game.html">Game</a>
-    <p>
-        Or insert an image like this:
-        <img src="https://sive.rs/images/kids-raft.jpg">
-    <p>
-        That's it!
-</body>
-
+    <link rel="stylesheet" href="styles/home_style.css">
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="templates/about_me.html">About</a></li>
+          <li><a href="templates/portfolio.html">Portfolio</a></li>
+          <li><a href="templates/game.html">Game</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section id="hero">
+        <h1>Welcome to the World of Chia</h1>
+        <p>Explore my breathtaking work and dynamic personality.</p>
+        <a href="templates/portfolio.html" class="btn">View Portfolio</a>
+        <div class="bubble">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="bubble small">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </section>
+      <section id="about">
+        <h2>About Me</h2>
+        <p>I have very few friends, and therefore built this website to keep my mind off the soul destroying loneliness that usually fills my mind. It didn't work.</p>
+        <a href="templates/about_me.html" class="btn">Learn More</a>
+      </section>
+      <section id="portfolio">
+        <h2>Portfolio</h2>
+        <ul>
+          <li>
+            <a href="templates/portfolio.html#sunderland_section">
+              <img src="assets/sunderland_logo.png" alt="Project 1">
+              <h3>Football Analytics</h3>
+            </a>
+          </li>
+          <li>
+            <a href="templates/portfolio.html#motherbird">
+              <img src="assets/MotherBird_icon.png" alt="Project 2">
+              <h3>MotherBird App</h3>
+            </a>
+          </li>
+          <li>
+            <a href="templates/portfolio.html#moron">
+              <img src="assets/me_tea.JPG" alt="Project 3">
+              <h3>"Handsome Boy"</h3>
+              <h3 id="quote-reference">- my mother</h3>
+            </a>
+          </li>
+        </ul>
+      </section>
+    </main>
+    <footer>
+      <p>&copy; 2023 My Personal Website</p>
+    </footer>
+    <script src="scripts/home.js"></script>
+  </body>
 </html>
