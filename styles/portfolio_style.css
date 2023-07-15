@@ -2,49 +2,58 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-  }
-  
-  body {
+}
+
+body {
     font-family: Arial, sans-serif;
     font-size: 16px;
     line-height: 1.5;
     color: #333;
-  }
-  
-  header {
+}
+
+header {
     background-color: #000;
     color: #fff;
     padding: 20px;
-  }
-  
-  nav ul {
+}
+
+nav ul {
     list-style: none;
     display: flex;
     justify-content: space-around;
-  }
-  
-  nav ul li a {
-      color: #fff;
-      text-decoration: none;
-      padding: 10px;
-      border-radius: 10px;
-      border: 3px solid transparent; /* Add this line */
-      transition: background-color 0.3s ease;
-  }
-  
-  nav ul li a:hover {
-      background-color: #ffffff;
-      color: #000;
-      padding: 10px;
-      border-radius: 10px;
-    }
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 10px;
+    border: 3px solid transparent; /* Add this line */
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #ffffff;
+    color: #000;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+h1 {
+    margin: 0;
+    font-size: 48px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: -50px;
+}
 
 .portfolio-holder {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    }
+}
     
 .horizontal-rectangle {
     align-items: left;
