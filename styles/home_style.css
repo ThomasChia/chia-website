@@ -100,6 +100,10 @@ main {
   margin-top: 80px;
 }
 
+a {
+  text-decoration: none;
+}
+
 #portfolio h2 {
   font-size: 36px;
   margin-bottom: 40px;
@@ -109,6 +113,7 @@ main {
   list-style: none;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 #portfolio li {
@@ -119,13 +124,20 @@ main {
   width: 100%;
   height: auto;
   margin-bottom: 10px;
+  border-radius: 10px;
 }
 
 #portfolio li h3 {
   align-items: center;
   text-align: center;
   font-size: 24px;
-  margin-bottom: 10px;
+  /* margin-bottom: 10px; */
+}
+
+#quote-reference {
+  font-style: italic;
+  margin-left: 200px;
+  margin-top: -10px;
 }
 
 footer {
