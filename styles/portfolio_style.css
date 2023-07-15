@@ -39,22 +39,31 @@
       border-radius: 10px;
     }
 
+.portfolio-holder {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    }
+    
 .horizontal-rectangle {
-    width: 200px;
-    height: 100px;
-    background-color: blue;
+    width: 50vw;
+    height: 30vw;
     border-radius: 20px;
-    position: absolute;
-    top: 50px;
-    left: 50px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+    }
+    
+.vertical-rectangle {
+    width: 30vw;
+    height: 45vw;
+    border-radius: 20px;
+    }
+
+.vertical-rectangle img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.5);
 }
 
-.vertical-rectangle {
-    width: 100px;
-    height: 200px;
-    background-color: red;
-    border-radius: 20px;
-    position: absolute;
-    top: 100px;
-    left: 150px;
-}
