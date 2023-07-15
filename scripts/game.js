@@ -76,6 +76,12 @@ var resetButton = document.getElementById("resetButton");
 resetButton.addEventListener("click", function () {
     block.style.animation = "block 1s infinite linear";
     block.style.display = "block";
+    checkDead();
+});
+
+resetButton.addEventListener("click", function () {
+    block.style.animation = "block 1s infinite linear";
+    block.style.display = "block";
     resetButton.style.visibility = "hidden";
     score = 0;
     scoreElement.textContent = "Score: " + score;
@@ -83,5 +89,3 @@ resetButton.addEventListener("click", function () {
     clearInterval(checkDeadInterval);
     checkDead()
 });
-
-checkDead();
