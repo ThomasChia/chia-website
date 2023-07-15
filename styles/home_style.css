@@ -122,6 +122,8 @@ main {
 }
 
 #portfolio li h3 {
+  align-items: center;
+  text-align: center;
   font-size: 24px;
   margin-bottom: 10px;
 }

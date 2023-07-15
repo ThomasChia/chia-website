@@ -47,11 +47,43 @@
     }
     
 .horizontal-rectangle {
+    align-items: left;
     width: 50vw;
     height: 30vw;
     border-radius: 20px;
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
-    }
+    padding: 20px;
+}
+
+.horizontal-rectangle h2 {
+    padding: 20px;
+}
+
+.horizontal-rectangle p {
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.horizontal-rectangle ul {
+    margin: 0;
+    padding: 0;
+    list-style: inside;
+}
+
+.horizontal-rectangle li {
+    margin-bottom: 10px;
+}
+
+.stars {
+    font-size: 20px;
+    margin-top: 10px;
+    margin-left: 16px;
+}
+  
+.star {
+color: gold;
+}
     
 .vertical-rectangle {
     width: 30vw;
