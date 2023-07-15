@@ -57,13 +57,32 @@
     width: 30vw;
     height: 45vw;
     border-radius: 20px;
+    margin-right: 20px;
+    margin-left: 20px;
     }
 
 .vertical-rectangle img {
     object-fit: cover;
+    object-position: top;
     width: 100%;
     height: 100%;
     border-radius: 20px;
     box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.5);
 }
 
+.vertical-rectangle #motherbird {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.vertical-rectangle .mb_home {
+    width: 70%;
+}
+
+.vertical-rectangle .mb_icon {
+    width: 20%;
+    height: auto;
+    margin-right: 2.5%;
+    margin-bottom: 95%;
+}
