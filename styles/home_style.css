@@ -234,7 +234,7 @@ footer {
 /* Media queries */
 
 /* Small screens */
-@media only screen and (max-width: 750px) {
+@media only screen and (max-width: 768px) {
   header {
     padding: 10px;
   }

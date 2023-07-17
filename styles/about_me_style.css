@@ -140,14 +140,42 @@ footer {
   text-align: center;
 }
 
-@media screen and (max-width: 768px) {
-  h1 {
-    font-size: 36px;
+@media only screen and (max-width: 768px) {
+  header {
+    padding: 10px;
   }
+
+  nav ul li a {
+    padding: 5px;
+    border-radius: 5px;
+  }
+
+  nav ul li a:hover {
+      padding: 5px;
+      border-radius: 5px;
+    }
+
+  body {
+    font-size: 15px;
+  }
+
+  main {
+    padding: 10px;
+    font-size: 15px;
+  }
+
   h2 {
     font-size: 24px;
+    margin-bottom: 10px;
   }
+
   p {
     font-size: 16px;
+    margin-bottom: 10px;
+  }
+
+  ul ul {
+    font-size: 16px;
+    margin-left: 10px;
   }
 }
