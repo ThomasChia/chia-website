@@ -149,7 +149,7 @@ h1 {
 }
   
 .star {
-color: gold;
+    color: gold;
 }
 
 #linkedin_logo {
@@ -163,7 +163,7 @@ color: gold;
     border-radius: 20px;
     margin-right: 20px;
     margin-left: 20px;
-    }
+}
 
 .vertical-rectangle img {
     object-fit: cover;
@@ -189,4 +189,91 @@ color: gold;
     height: auto;
     margin-right: 2.5%;
     margin-bottom: 95%;
+}
+
+
+/* Small screens */
+@media only screen and (max-width: 768px) {
+    header {
+      padding: 10px;
+    }
+  
+    nav ul li a {
+      padding: 5px;
+      border-radius: 5px;
+    }
+  
+    nav ul li a:hover {
+        padding: 5px;
+        border-radius: 5px;
+      }
+  
+    body {
+      font-size: 10px;
+    }
+  
+    main {
+      padding: 10px;
+    }
+
+    .portfolio-holder {
+        height: 50vh;
+        margin-bottom: -50px;
+    }
+
+    h1 {
+        font-size: 20px;
+        margin-bottom: -30px;
+    }
+
+    .horizontal-rectangle h2 {
+        text-align: center;
+        font-size: 0.7rem;
+        padding: 0px;
+        margin-left: 0px;
+    }
+
+    .horizontal-rectangle p {
+        font-size: 7.5px;
+        line-height: 1.2;
+    }
+
+    .horizontal-rectangle {
+        padding: 0px;
+        height: 60vw;
+    }
+
+    .vertical-rectangle {
+        height: 80vw;
+    }
+
+    .vertical-rectangle .mb_home {
+        width: 120%;
+        margin-left: -20px;
+    }
+
+    .vertical-rectangle .sunderland_image {
+        width: 120%;
+    }
+
+    .vertical-rectangle .moron_image {
+        width: 120%;
+    }
+
+    .stars {
+        font-size: 10px;
+        margin-left: 5px;
+    }
+
+    .horizontal-rectangle li {
+        font-size: 7.5px;
+        line-height: 1rem;
+        margin-left: 0px;
+    }
+
+    #linkedin_logo {
+        width: 25px;
+        height: 25px;
+    }
+
 }
