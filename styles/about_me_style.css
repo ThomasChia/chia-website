@@ -82,6 +82,10 @@ section:hover {
   display: flex;
 }
 
+div.tenor-gif-embed {
+  width: 25%;
+}
+
 #top-gif {
   justify-content: center;
   padding: 20px;
@@ -156,7 +160,7 @@ footer {
     }
 
   body {
-    font-size: 15px;
+    font-size: 10px;
   }
 
   main {
@@ -164,18 +168,26 @@ footer {
     font-size: 15px;
   }
 
+  h1 {
+    font-size: 30px;
+  }
+
   h2 {
-    font-size: 24px;
+    font-size: 16px;
     margin-bottom: 10px;
   }
 
   p {
-    font-size: 16px;
+    font-size: 10px;
     margin-bottom: 10px;
   }
 
   ul ul {
     font-size: 16px;
     margin-left: 10px;
+  }
+
+  div.tenor-gif-embed {
+    width: 50%;
   }
 }
