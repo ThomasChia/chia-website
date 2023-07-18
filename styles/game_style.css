@@ -155,3 +155,58 @@ body {
 .instructions p {
     padding: 10px;
 }
+
+/* Small screens */
+@media only screen and (max-width: 768px) {
+    header {
+        padding: 10px;
+    }
+
+    nav {
+        font-size: 10px;
+    }
+
+    nav ul li a {
+        padding: 5px;
+        border-radius: 5px;
+    }
+
+    nav ul li a:hover {
+        padding: 5px;
+        border-radius: 5px;
+        }
+
+    body {
+        font-size: 14px;
+        }
+
+    #score {
+        font-size: 18px;
+    }
+
+    #resetButton {
+        font-size: 18px;
+        padding: 5px 10px;
+    }
+
+    #game {
+        width: 300px;
+    }
+
+    #block {
+        left: 275px;
+    }
+
+    @keyframes block {
+        0% {
+            left : 275px;
+        }
+        100% {
+            left : 0;
+        }
+    }
+
+    .animate {
+        animation: jump 700ms;
+    }
+}
