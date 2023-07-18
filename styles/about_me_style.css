@@ -190,4 +190,8 @@ footer {
   div.tenor-gif-embed {
     width: 50%;
   }
+
+  .treePlot {
+    font-size: 10px;
+  }
 }
