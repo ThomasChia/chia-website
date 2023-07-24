@@ -160,7 +160,7 @@ footer {
     }
 
   body {
-    font-size: 10px;
+    font-size: 12px;
   }
 
   main {
@@ -178,7 +178,7 @@ footer {
   }
 
   p {
-    font-size: 10px;
+    font-size: 12px;
     margin-bottom: 10px;
   }
 
@@ -192,6 +192,6 @@ footer {
   }
 
   .treePlot {
-    font-size: 10px;
+    font-size: 12px;
   }
 }
