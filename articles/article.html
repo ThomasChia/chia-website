@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Article</title>
+	<link rel="stylesheet" href="../styles/article_style.css"> <!-- Add your CSS file here -->
+</head>
+<body>
+	<header>
+		<nav>
+			<ul>
+			<li><a href="../templates/home">Home</a></li>
+			<li><a href="../templates/about_me">About</a></li>
+			<li><a href="../templates/portfolio">Portfolio</a></li>
+            <li><a href="../templates/ramblings">Ramblings</a></li>
+			<li><a href="../templates/game">Game</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<div id="content"></div>
+	<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+	<script>
+		document.addEventListener("DOMContentLoaded", function () {
+			const urlParams = new URLSearchParams(window.location.search);
+			const articlePath = urlParams.get('article');
+
+			if (articlePath) {
+				fetch(articlePath)
+					.then(response => response.text())
+					.then(markdown => {
+						const content = document.getElementById('content');
+						content.innerHTML = marked.parse(markdown);
+					})
+					.catch(error => console.error('Error loading article:', error));
+			} else {
+				console.error('No article specified');
+			}
+		});
+	</script>
+</body>
+</html>

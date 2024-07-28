@@ -20,10 +20,11 @@
 	<header>
 		<nav>
 			<ul>
-			<li><a href="home.html">Home</a></li>
-			<li><a href="about_me.html">About</a></li>
-			<li><a href="portfolio.html">Portfolio</a></li>
-			<li><a href="game.html">Game</a></li>
+			<li><a href="home">Home</a></li>
+			<li><a href="about_me">About</a></li>
+			<li><a href="portfolio">Portfolio</a></li>
+            <li><a href="ramblings">Ramblings</a></li>
+			<li><a href="game">Game</a></li>
 			</ul>
 		</nav>
 	</header>
@@ -88,7 +89,7 @@
                     <ul>
                         <li>Diverse ethnicities</li>
                         <li>Wears glasses</li>
-                        <li>#1 HR's Most Called Employee 2021 & 2022</li>
+                        <li>HR's Most Called Employee three years running</li>
                         <li>Likes piña coladas and getting caught in the rain</li>
                     </ul>
                 </p>

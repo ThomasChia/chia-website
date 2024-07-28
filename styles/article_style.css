@@ -1,0 +1,134 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+header {
+    background-color: #000;
+    color: #fff;
+    padding: 20px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 10px;
+    border: 3px solid transparent;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #ffffff;
+    color: #000;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+/* Body styling */
+body {
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+	line-height: 1.8;
+	background-color: #f5f5f7;
+	color: #1d1d1f;
+}
+
+/* Container for the content */
+#content {
+    max-width: 1000px; /* Increase the max-width to make the content wider */
+    margin: 20px auto 40px; /* Reduce the top margin to 20px */
+    padding: 10px 40px;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Headings */
+#content h1, #content h2, #content h3, #content h4, #content h5, #content h6 {
+	margin-top: 24px;
+	margin-bottom: 16px;
+	color: #1d1d1f;
+	font-weight: 500;
+}
+
+#content h1 {
+	font-size: 2.5em;
+}
+
+#content h2 {
+	font-size: 2em;
+}
+
+#content h3 {
+	font-size: 1.75em;
+}
+
+/* Custom class for the date */
+.date {
+    display: block;
+    margin-top: -30px; /* Adjust this value as needed */
+    font-style: italic;
+    color: #6c757d; /* Optional: Change the color to a lighter shade */
+}
+
+/* Paragraphs */
+#content p {
+    margin-bottom: 24px;
+    font-size: 1em;
+    line-height: 1.8;
+}
+
+/* Links */
+#content a {
+    color: #007aff;
+    text-decoration: none;
+    border-bottom: 1px solid rgba(0, 122, 255, 0.2);
+    transition: border-bottom 0.2s;
+}
+
+#content a:hover {
+    border-bottom: 1px solid #007aff;
+}
+
+/* Lists */
+#content ul, #content ol {
+    margin: 24px 0;
+    padding-left: 40px;
+}
+
+#content li {
+    margin-bottom: 12px;
+    font-size: 1.125em;
+}
+
+/* Blockquotes */
+#content blockquote {
+    margin: 24px 0;
+    padding: 16px 24px;
+    background: #f5f5f7;
+    border-left: 4px solid #007aff;
+    color: #1d1d1f;
+    font-style: italic;
+}
+
+/* Code blocks */
+#content pre {
+    background: #f5f5f7;
+    padding: 16px;
+    border-radius: 8px;
+    overflow-x: auto;
+}
+
+#content code {
+	background: #f5f5f7;
+	padding: 4px 8px;
+	border-radius: 4px;
+	font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
+}

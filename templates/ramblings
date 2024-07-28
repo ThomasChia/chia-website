@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XP8J14GBZS"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-XP8J14GBZS');
+    </script>
+    <meta charset="UTF-8">
+    <title>About Me</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../assets/panda.png">
+    <link rel="stylesheet" href="../styles/ramblings_style.css">
+</head>
+<body>
+	<header>
+		<nav>
+			<ul>
+			<li><a href="home">Home</a></li>
+			<li><a href="about_me">About</a></li>
+			<li><a href="portfolio">Portfolio</a></li>
+            <li><a href="ramblings">Ramblings</a></li>
+			<li><a href="game">Game</a></li>
+			</ul>
+		</nav>
+	</header>
+
+    <main class="main-content">
+        <div class="container">
+            <section class="intro">
+                <h2>Documenting the Descent into Madness</h2>
+                <p>You have been warned</p>
+            </section>
+            <section id="articles-list" class="articles-list">
+                <!-- Articles will be injected here by JavaScript -->
+            </section>
+            <section id="content" class="article-content">
+                <!-- Markdown content will be displayed here -->
+            </section>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 My Blog. All rights reserved. Not sure what rights they are exactly, but they're reserved!</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script src="../scripts/ramblings.js"></script>
+</body>
+</html>
