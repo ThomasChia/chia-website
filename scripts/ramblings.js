@@ -5,11 +5,11 @@ document.addEventListener("DOMContentLoaded", function () {
             excerpt: "Everyone uses Git, but do you actually know how it works? Yeah, me neither.",
             link: "../articles/article.html?article=../articles/building_git_from_scratch_in_python.md"
         },
-        // {
-        //     title: "Building Docker from Scratch in Python",
-        //     excerpt: "This is a container containing content about building containers. From scratch!",
-        //     link: "../articles/building-docker-from-scratch-in-python.md"
-        // },
+        {
+            title: "Implementing Go from Scratch in Python",
+            excerpt: "We're building AlphaGo. The first step, implement Go.",
+            link: "../articles/article.html?article=../articles/implementing_go_from_scratch_in_python.md"
+        },
         // Add more articles as needed
     ];
 
