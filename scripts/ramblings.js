@@ -10,6 +10,11 @@ document.addEventListener("DOMContentLoaded", function () {
             excerpt: "We're building AlphaGo. The first step, implement Go.",
             link: "../articles/article.html?article=../articles/implementing_go_from_scratch_in_python.md"
         },
+        {
+            title: "Building the Policy Network",
+            excerpt: "We've implemented Go. Now we need to build the policy network.",
+            link: "../articles/article.html?article=../articles/building_the_policy_network.md"
+        },
         // Add more articles as needed
     ];
 
