@@ -10,6 +10,7 @@
 
     gtag('config', 'G-XP8J14GBZS');
     </script>
+    <script async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <meta charset="UTF-8">
     <title>About Me</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">

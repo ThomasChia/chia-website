@@ -1,5 +1,5 @@
 # Building the Policy Network
-<span class="date">*18th August 2024*</span>
+<span class="date">*29th September 2024*</span>
 
 Time to start implementing some actual neural networks. The first network we will build is the Policy Network. In classical reinforcement learning, the policy network is the part of the programme that decides which action to take in a given state, so here that would be which move to play in a given board position. For AlphaGo, things are slightly more complicated, but we'll try it anyway. The Policy Network is used to narrow the scope of potential moves that the rest of the programme has to consider. It outputs a probability distribution over all possible moves in a given state, and from that we can select the most promising moves i.e. the ones with the highest probability.
 
@@ -16,7 +16,7 @@ Unfortunately, after reading the paper again, it's not quite as simple as passin
 The architecture of the policy network is described in the [Appendix](https://storage.googleapis.com/deepmind-media/alphago/AlphaGoNaturePaper.pdf) and looks as follows:
 
 <div style="text-align: center;">
-    <img src="./assets/building_the_policy_network/alphago_policy_network.png" alt="AlphaGo Policy Network" style="border-radius: 15px; width: 40%;">
+    <img src="./assets/building_the_policy_network/alphago_policy_network.jpg" alt="AlphaGo Policy Network" style="border-radius: 15px; width: 40%;">
 </div>
 
 Looks reasonable. We can build that.

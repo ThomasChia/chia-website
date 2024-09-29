@@ -159,7 +159,7 @@ Perfect, and we can repeat for `staging/objects` and `local/objects`, using the 
 Cool, so how do we link this with our `lit.py` file so we can run it with an `init` command? If we think about the flow, we'll want to run `lit.py` with a command. Then based on that command, we want the programme to run the associated script. Here, we'd use the `init` command and we'd want `lit.py` to call `initialise.py`. Therefore, I'm thinking that we can have a middle layer, a script called `run.py`, that will take the parsed input from `lit.py` and call the wanted script based on the command. We can put `run.py` and `initialise.py` inside the `lit/` folder for organisation. 
 
 <p align="center">
-    <img src="./assets/building_git_from_scratch_in_python/diagrams/lit_init_diagram.png" style="border-radius: 8px; width: 100%;" />
+    <img src="./assets/building_git_from_scratch_in_python/diagrams/lit_init_diagram.jpg" style="border-radius: 8px; width: 100%;" />
 </p>
 
 So to actually build `run.py`, we'll want a `run()` function and then some way of taking the command given, which is a string, and linking that to the `init.py` script. Further down the line, we'll want to do this for the other git commands too. This sounds like the perfect place to use an `Enum`.

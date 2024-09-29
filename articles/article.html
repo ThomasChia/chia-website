@@ -23,6 +23,24 @@
 	<div id="content"></div>
 	<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 	<script>
+        window.MathJax = {
+            tex: {
+                inlineMath: [['$', '$'], ['\\(', '\\)']],
+                displayMath: [['$$', '$$'], ['\\[', '\\]']]
+            },
+            svg: {
+                fontCache: 'global'
+            }
+        };
+    </script>
+	<style>
+        /* Custom CSS for MathJax to make the font slightly smaller */
+        .mathjax-container {
+            font-size: 0.9em; /* Adjust this value as needed */
+        }
+    </style>
+	<script async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+	<script>
 		document.addEventListener("DOMContentLoaded", function () {
 			const urlParams = new URLSearchParams(window.location.search);
 			const articlePath = urlParams.get('article');
@@ -33,6 +51,7 @@
 					.then(markdown => {
 						const content = document.getElementById('content');
 						content.innerHTML = marked.parse(markdown);
+						MathJax.typeset();
 					})
 					.catch(error => console.error('Error loading article:', error));
 			} else {

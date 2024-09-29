@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", function () {
+document.addEventListener('DOMContentLoaded', () => {
     const articles = [
         {
             title: "Building Git from Scratch in Python",
@@ -24,6 +24,10 @@ document.addEventListener("DOMContentLoaded", function () {
         const articleCard = document.createElement('div');
         articleCard.classList.add('article-card');
 
+        const articleLink = document.createElement('a');
+        articleLink.href = article.link;
+        articleLink.classList.add('article-link'); // Add a class for styling
+
         const articleTitle = document.createElement('h3');
         articleTitle.classList.add('article-title');
         articleTitle.textContent = article.title;
@@ -32,15 +36,18 @@ document.addEventListener("DOMContentLoaded", function () {
         articleExcerpt.classList.add('article-excerpt');
         articleExcerpt.textContent = article.excerpt;
 
-        const readMoreLink = document.createElement('a');
+        const readMoreLink = document.createElement('span');
         readMoreLink.classList.add('read-more');
-        readMoreLink.href = article.link; // Set the link to the article's link
         readMoreLink.textContent = 'Read More';
 
-        articleCard.appendChild(articleTitle);
-        articleCard.appendChild(articleExcerpt);
-        articleCard.appendChild(readMoreLink);
+        articleLink.appendChild(articleTitle);
+        articleLink.appendChild(articleExcerpt);
+        articleLink.appendChild(readMoreLink);
 
+        articleCard.appendChild(articleLink);
         articlesList.appendChild(articleCard);
     });
+
+    // Ensure MathJax processes the new content
+    MathJax.typeset();
 });

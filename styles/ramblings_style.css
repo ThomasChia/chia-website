@@ -87,6 +87,12 @@ nav ul li a:hover {
     margin-bottom: 10px;
 }
 
+.article-link {
+    display: block;
+    text-decoration: none;
+    color: inherit; /* Inherit color from parent */
+}
+
 .article-excerpt {
     font-size: 16px;
     color: #666;
